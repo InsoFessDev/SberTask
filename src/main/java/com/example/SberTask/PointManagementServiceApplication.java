@@ -4,10 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PointsManagementApplication {
-
+public class PointManagementServiceApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(PointsManagementApplication.class, args);
+		SpringApplication.run(PointManagementServiceApplication.class, args);
 	}
-
 }
