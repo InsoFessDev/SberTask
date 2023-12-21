@@ -1,6 +1,7 @@
 package com.example.SberTask.controller;
 
-import com.example.service.PointService;
+import com.example.SberTask.model.PointRequest;
+import com.example.SberTask.service.PointService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

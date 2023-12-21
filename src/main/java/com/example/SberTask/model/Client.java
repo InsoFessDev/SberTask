@@ -1,30 +1,43 @@
 package com.example.SberTask.model;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Client {
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
     private int points;
 
-    public Client(int id, int points) {
-        this.id = id;
-        this.points = points;
+    public Client() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getPoints() {
         return points;
     }
 
-    public void addPoints(int amount) {
-        points += amount;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public boolean deductPoints(int amount) {
-        if (points >= amount) {
-            points -= amount;
-            return true;
-        }
-        return false;
+    public void setName(String name) {
+        this.name = name;
     }
+
+    public void setPoints(int points) {
+        this.points = points;
+    }
+
 }

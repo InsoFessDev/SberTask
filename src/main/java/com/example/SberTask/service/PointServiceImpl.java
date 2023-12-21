@@ -1,6 +1,7 @@
 package com.example.SberTask.service;
 
 import com.example.SberTask.model.Client;
+import com.example.SberTask.model.PointRequest;
 import com.example.SberTask.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,11 +9,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional
-public class PointsServiceImpl implements PointService {
+public class PointServiceImpl implements PointService {
     private final ClientRepository clientRepository;
 
     @Autowired
-    public PointsServiceImpl(ClientRepository clientRepository) {
+    public PointServiceImpl(ClientRepository clientRepository) {
         this.clientRepository = clientRepository;
     }
 
